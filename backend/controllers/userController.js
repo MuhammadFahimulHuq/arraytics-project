@@ -2,6 +2,7 @@ const asynchandler = require("express-async-handler");
 const jwt = require("jsonwebtoken");
 const bcrpyt = require("bcryptjs");
 const User = require("../models/userModal");
+const { use } = require("../routes/itemRoutes");
 //@desc register user
 //@route POST api/user
 //@access PUBLIC
@@ -71,9 +72,15 @@ const generateToken = (id) => {
 //@route GET api/user
 //@access PRIVATE
 const getme = asynchandler(async (req, res) => {
-  res.json({
-    message: "display user",
-  });
+  const user = await User.findById(req.user.id);
+  if (user) {
+    res.status(200).json({
+      name: user.name,
+    });
+  } else {
+    res.status(400);
+    throw new Error("user not found");
+  }
 });
 
 module.exports = {
