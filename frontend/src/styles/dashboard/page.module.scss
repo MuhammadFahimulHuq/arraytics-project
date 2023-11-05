@@ -1,21 +1,15 @@
 .container{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
+    max-width: 70%;
+    margin: auto;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 5px;
     padding: 30px;
-    h1{
-        font-size: 24px;
-        font-weight: 600;
-    }
+
     table{
         border-collapse: collapse;
         width: 100%;
         margin-top: 20px;
-        text-align: center;
+       text-align: left;
         tr, th, td{
             border: 1px solid rgb(226, 226, 226);
             
@@ -27,3 +21,79 @@
         justify-content: center;
     }
 }
+.actionButton{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+.actionContent{
+    display: flex;
+    justify-content: center;
+
+}
+.editButton{
+    background-color: rgb(162, 162, 255);
+    &:hover{
+        color: white;
+        background-color: rgb(54, 54, 255);;
+    }
+}
+.deleteButton{
+    background-color: rgb(253, 169, 169);
+    &:hover{
+        color: white;
+        background-color: rgb(255, 75, 75);
+    }
+}
+.titleContainer{
+    background-color: rgb(243, 253, 253);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-size: 24px;
+        font-weight: 500;
+        color: rgb(102, 102, 102);
+    }
+    .toolsContainer{
+        display: flex;
+        gap: 10px;
+     
+        button{
+            padding: 5px 20px;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            &:first-child{
+                background-color: rgb(223, 255, 223);
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 500;
+                &:hover{
+                    color: white;
+                    background-color: rgb(34, 99, 34);
+                }
+            }
+            &:nth-child(2){
+                font-weight: 500;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.searchTools{
+    width: 60%;
+    border: 1px solid rgb(126, 182, 184);
+    border-radius: 5px;
+    padding: 10px 5px;
+    color: rgb(88, 88, 88);
+ }

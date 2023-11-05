@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const itemSchema = mongoose.Schema(
   {
-    created_by: {
+    user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: "User",
