@@ -9,16 +9,16 @@
         border-collapse: collapse;
         width: 100%;
         margin-top: 20px;
-       text-align: left;
-        tr, th, td{
-            border: 1px solid rgb(226, 226, 226);
-            
-        }
+       text-align: center;
+       th, td{
+        padding: 5px;
+        border: 1px solid rgb(221, 221, 221);
+    }   
     }
     .content{
         display: flex;
         align-items: center;
-        justify-content: center;
+    
     }
 }
 .actionButton{
@@ -29,9 +29,7 @@
     border-radius: 50px;
 }
 .actionContent{
-    display: flex;
-    justify-content: center;
-
+width: 50px;
 }
 .editButton{
     background-color: rgb(162, 162, 255);
@@ -41,6 +39,7 @@
     }
 }
 .deleteButton{
+    margin-top: 5px;
     background-color: rgb(253, 169, 169);
     &:hover{
         color: white;
@@ -57,37 +56,9 @@
     h1{
         font-size: 24px;
         font-weight: 500;
-        color: rgb(102, 102, 102);
+        color: rgb(0, 135, 139);
     }
-    .toolsContainer{
-        display: flex;
-        gap: 10px;
-     
-        button{
-            padding: 5px 20px;
-            display: flex;
-            align-items: center;
-            gap: 2px;
-            &:first-child{
-                background-color: rgb(223, 255, 223);
-                border-radius: 5px;
-                font-size: 16px;
-                font-weight: 500;
-                &:hover{
-                    color: white;
-                    background-color: rgb(34, 99, 34);
-                }
-            }
-            &:nth-child(2){
-                font-weight: 500;
-                &:hover{
-                    background-color: black;
-                    color: white;
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
+
 }
 
 .searchTools{
@@ -97,3 +68,33 @@
     padding: 10px 5px;
     color: rgb(88, 88, 88);
  }
+ .toolsContainer{
+    display: flex;
+    gap: 10px;
+ 
+    button{
+        margin-top: 20px;
+        padding: 5px 20px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        &:first-child{
+            background-color: rgb(223, 255, 223);
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            &:hover{
+                color: white;
+                background-color: rgb(34, 99, 34);
+            }
+        }
+        &:nth-child(2){
+            font-weight: 500;
+            &:hover{
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+}
