@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../layout/Layout";
 import styles from "../styles/dashboard/page.module.scss";
-import TableData from "../components/tableData";
+import TableData from "../components/TableData";
 import ItemModal from "../components/ItemModal";
 import { ToastContainer } from "react-toastify";
 import useTokenAndAxiosConfig from "../hooks/useTokenAndAxiosConfig";

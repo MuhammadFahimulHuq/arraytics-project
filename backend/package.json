@@ -4,8 +4,8 @@
   "description": "mern stack project for arraytics",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "Muhammad Fahimul Huq",
   "license": "ISC",
